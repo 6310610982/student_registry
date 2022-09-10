@@ -1,0 +1,12 @@
+{% extends 'course_subject/layout.html'%}
+{% block body %}
+
+<h1>Subject List:</h1>
+<ul>
+    {% for course in course_subject%}
+    <li>{{course}}</li>
+    {%empty%}
+    <li>No subjects</li>
+    {% endfor %}
+</ul>
+{% endblock %} 
