@@ -9,4 +9,13 @@
     <li>No subjects</li>
     {% endfor %}
 </ul>
+
+<h1>User List:</h1>
+<ul>
+    {% for i in user%}
+    <li>{{i.username}}</li>
+    {%empty%}
+    <li>No users</li>
+    {% endfor %}
+</ul>
 {% endblock %} 
