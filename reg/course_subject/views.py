@@ -5,6 +5,8 @@ from django.http import HttpResponse
 from course_subject.models import Course
 from django.contrib.auth.models import User
 
+
+
 # Create your views here.
 
 def index(request):
@@ -15,3 +17,4 @@ def index(request):
         'course_subject' : course,
         'user' : user_data
     })
+    

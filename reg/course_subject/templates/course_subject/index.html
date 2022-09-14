@@ -4,7 +4,7 @@
 <h1>Subject List:</h1>
 <ul>
     {% for course in course_subject%}
-    <li>{{course}}</li>
+    <li>{{course}}   <input type="submit" value="enroll"></li>
     {%empty%}
     <li>No subjects</li>
     {% endfor %}
